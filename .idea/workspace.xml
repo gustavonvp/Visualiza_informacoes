@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testingHyperopt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Visualiza_informacoes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Visualiza_informacoes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="Mapping Commit Closes #6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -24,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -191,7 +194,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Closes #1" />
+    <MESSAGE value="Closes #1, closes #2" />
+    <MESSAGE value="Closes #6" />
     <MESSAGE value="Closes #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Closes #2" />
+    <MESSAGE value="Mapping Commit Closes #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mapping Commit Closes #6" />
   </component>
 </project>

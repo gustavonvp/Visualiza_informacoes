@@ -49,24 +49,25 @@ data1 = (
 
 data1.head()
 
-data = OrderedDict(
-                    [   ("country",["year", "co2"]),
-                        ("co2_per_capita",["trade_co2", "cement_co2"]),
-                    ]
-                   )
-
+#data = OrderedDict(
+    #                [   ("country",["year", "co2"]),
+   #                     ("co2_per_capita",["trade_co2", "cement_co2"]),
+  #                  ]
+ #                  )
+#df = pd.DataFrame(data)
 # <<show score here>>
 
-df = pd.DataFrame(data)
 
 
-app = Dash()
-app1 = Dash(__name__)
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+app = Dash(external_stylesheets=external_stylesheets)
 
-app1.layout = dash_table.DataTable(
-    data=df.to_dict('records'),
-    columns=[{'id': c, 'country': c} for c in df.columns]
-)
+#app1 = Dash(__name__)
+
+#app1.layout = dash_table.DataTable(
+ #   data=df.to_dict('records'),
+  #  columns=[{'id': c, 'country': c} for c in df.columns]
+#)
 
 
 app.layout = [
@@ -74,28 +75,37 @@ app.layout = [
     # App layout
 
 
-    html.Div(children = 'Aplicativo sobre CO2 em rank Mundial'),
-    html.P("Selecione um pais:"),
-    dcc.RadioItems(
-        id='graph1',
-        options=["iso_code", "country", "year", "co2", "co2_per_capita", "trade_co2", "cement_co2", "cement_co2_per_capita",
-           "coal_co2", "coal_co2_per_capita", "flaring_co2", "flaring_co2_per_capita", "gas_co2", "gas_co2_per_capita",
-           "oil_co2", "oil_co2_per_capita", "other_industry_co2", "other_co2_per_capita", "co2_growth_prct",
-           "co2_growth_abs", "co2_per_gdp", "co2_per_unit_energy", "consumption_co2", "consumption_co2_per_capita",
-           "consumption_co2_per_gdp", "cumulative_co2", "cumulative_cement_co2", "cumulative_coal_co2",
-           "cumulative_flaring_co2", "cumulative_gas_co2", "cumulative_oil_co2", "cumulative_other_co2",
-           "trade_co2_share", "share_global_co2", "share_global_cement_co2", "share_global_coal_co2",
-           "share_global_flaring_co2", "share_global_gas_co2", "share_global_oil_co2", "share_global_other_co2",
-           "share_global_cumulative_co2", "share_global_cumulative_cement_co2", "share_global_cumulative_coal_co2",
-           "share_global_cumulative_flaring_co2", "share_global_cumulative_gas_co2", "share_global_cumulative_oil_co2",
-           "share_global_cumulative_other_co2", "total_ghg", "ghg_per_capita", "total_ghg_excluding_lucf",
-           "ghg_excluding_lucf_per_capita", "methane", "methane_per_capita", "nitrous_oxide",
-           "nitrous_oxide_per_capita", "population", "gdp", "primary_energy_consumption", "energy_per_capita",
-           "energy_per_gdp" ],
-        value="country",
-        inline=True
-    ),
-    dash_table.DataTable(data=data1.to_dict('records'), page_size=10),
+    html.Div(children = 'Aplicativo sobre CO2 em rank Mundial', style={'textAlign': 'center', 'color': 'blue', 'fontSize': 30}),
+    html.P("Selecione uma categoria de analise de co2:"),
+    html.Div(className='row', children=[
+        dcc.RadioItems(
+            id='graph1',
+            options=["iso_code", "country", "year", "co2", "co2_per_capita", "trade_co2", "cement_co2",
+                     "cement_co2_per_capita",
+                     "coal_co2", "coal_co2_per_capita", "flaring_co2", "flaring_co2_per_capita", "gas_co2",
+                     "gas_co2_per_capita",
+                     "oil_co2", "oil_co2_per_capita", "other_industry_co2", "other_co2_per_capita", "co2_growth_prct",
+                     "co2_growth_abs", "co2_per_gdp", "co2_per_unit_energy", "consumption_co2",
+                     "consumption_co2_per_capita",
+                     "consumption_co2_per_gdp", "cumulative_co2", "cumulative_cement_co2", "cumulative_coal_co2",
+                     "cumulative_flaring_co2", "cumulative_gas_co2", "cumulative_oil_co2", "cumulative_other_co2",
+                     "trade_co2_share", "share_global_co2", "share_global_cement_co2", "share_global_coal_co2",
+                     "share_global_flaring_co2", "share_global_gas_co2", "share_global_oil_co2",
+                     "share_global_other_co2",
+                     "share_global_cumulative_co2", "share_global_cumulative_cement_co2",
+                     "share_global_cumulative_coal_co2",
+                     "share_global_cumulative_flaring_co2", "share_global_cumulative_gas_co2",
+                     "share_global_cumulative_oil_co2",
+                     "share_global_cumulative_other_co2", "total_ghg", "ghg_per_capita", "total_ghg_excluding_lucf",
+                     "ghg_excluding_lucf_per_capita", "methane", "methane_per_capita", "nitrous_oxide",
+                     "nitrous_oxide_per_capita", "population", "gdp", "primary_energy_consumption", "energy_per_capita",
+                     "energy_per_gdp"],
+            value="country",
+            inline=True
+        ),
+    ]),
+
+    dash_table.DataTable(data=data1.to_dict('records'), page_size=10,style_table={'overflowX': 'auto'}),
     dcc.Graph(id="graph", figure={})
 ]
 
