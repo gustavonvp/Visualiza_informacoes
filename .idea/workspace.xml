@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="Mapping Commit Closes #6">
+    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="Closes #1">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2024_06_20__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_03_06_2024_06_20__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -40,12 +41,12 @@
     &quot;assignee&quot;: &quot;gustavonvp&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/gustavonvp/Visualiza_informacoes.git&quot;,
-    &quot;accountId&quot;: &quot;d76f551d-4c4c-4cdc-8954-b5456a524cc0&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/gustavonvp/Visualiza_informacoes.git",
+    "accountId": "0f692a23-5698-4093-a861-69840493918d"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -166,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717188402980</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Closes #1">
+      <option name="closed" value="true" />
+      <created>1717403734860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717403734860</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,11 +202,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Closes #1" />
     <MESSAGE value="Closes #1, closes #2" />
     <MESSAGE value="Closes #6" />
     <MESSAGE value="Closes #2" />
     <MESSAGE value="Mapping Commit Closes #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapping Commit Closes #6" />
+    <MESSAGE value="Closes #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Closes #1" />
   </component>
 </project>

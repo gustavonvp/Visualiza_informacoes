@@ -9,6 +9,9 @@ import plotly.express as px
 from collections import OrderedDict
 import sklearn.svm
 from dash import Dash, html, dash_table, dcc, Input, Output
+import dash_mantine_components as dmc
+import dash_daq as daq
+
 import json
 import sys
 
@@ -69,13 +72,17 @@ app = Dash(external_stylesheets=external_stylesheets)
   #  columns=[{'id': c, 'country': c} for c in df.columns]
 #)
 
+df = px.data.gapminder()
+df = df.loc[df["pop"] > 1e8]
 
 app.layout = [
 
     # App layout
+    html.H2("Turning a Graph On and Off with BooleanSwitch"),
+    html.P("graph off | graph on:", style={"textAlign": "center"}),
+    daq.BooleanSwitch(id="pb", on=True),
 
-
-    html.Div(children = 'Aplicativo sobre CO2 em rank Mundial', style={'textAlign': 'center', 'color': 'blue', 'fontSize': 30}),
+    html.Div(id="pb-result", children = 'Aplicativo sobre CO2 em rank Mundial', style={'textAlign': 'center', 'color': 'blue', 'fontSize': 30}),
     html.P("Selecione uma categoria de analise de co2:"),
     html.Div(className='row', children=[
         dcc.RadioItems(
@@ -103,10 +110,14 @@ app.layout = [
             value="country",
             inline=True
         ),
+
     ]),
+
+
 
     dash_table.DataTable(data=data1.to_dict('records'), page_size=10,style_table={'overflowX': 'auto'}),
     dcc.Graph(id="graph", figure={})
+
 ]
 
 @app.callback(
@@ -124,6 +135,25 @@ def update_graph(col_chosen):
     return fig
 # Add controls to build the interaction
 
+@app.callback(
+    Output("pb-result", "children"),
+    Input("pb", "on"),
+)
+def update_output(on):
+    if on:
+        fig = px.line(
+            df,
+            x="year",
+            y="lifeExp",
+            color="country",
+            markers=True,
+            title="Life Expectancy for Countries with High Population",
+        )
+        fig.update(layout=dict(title=dict(x=0.5)))
+        return dcc.Graph(figure=fig)
+    else:
+        fig = px.scatter()
+        return dcc.Graph(figure=fig)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
