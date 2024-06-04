@@ -140,7 +140,7 @@ def update_graph2(value):
         dff,
         x="Paises",
         y="Emissao",
-        title="Paises com emissao acima de 20 milhoes",
+        title="Paises com emissao acima de 20 K Toneladas",
     )
     fig2.update(layout=dict(title=dict(x=0.5)))
     return fig2
@@ -164,7 +164,7 @@ def update_graph2(value):
         dff,
         x="Ano",
         y="Continente",
-        title="Continentes com emissao ate 25K de gases"
+        title="Continentes com emissao ate 25K Toneladas de gases"
     )
     fig3.update(layout=dict(title=dict(x=0.5)))
     return fig3

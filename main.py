@@ -73,8 +73,8 @@ app.layout = [
     #Print graph datable and figure dataplot
 
     dash_table.DataTable(data=data1.to_dict('records'), page_size=10, style_table={'overflowX': 'auto'}),
-    dcc.Graph(id="graph", figure={})
-
+    dcc.Graph(id="graph", figure={}),
+    dcc.Graph(id="graph2", figure={})
 ]
 
 
@@ -85,6 +85,13 @@ def update_graph(col_chosen):
     fig = px.histogram(data1, x='country', y=col_chosen, histfunc='avg', barmode="group")
     return fig
 
+
+@app.callback(
+    Output(component_id='graph2', component_property='figure'),
+    Input(component_id='graph1', component_property='value'))
+def update_graph(col_chosen):
+    fig2 = px.histogram(data1, x='country', y=col_chosen, histfunc='count', barmode="group")
+    return fig2
 
 # Add controls to build the interaction
 
