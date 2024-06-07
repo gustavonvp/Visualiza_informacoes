@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="Update database e Jupyter Notebook">
-      <change afterPath="$PROJECT_DIR$/NetworkPythomMap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyvisComponentLibTestingNetwork.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/PythonVisualizandoInformacoes-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/PythonVisualizandoInformacoes-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonVisualizandoInformacoes.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PythonVisualizandoInformacoes.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados/all_month.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dados/owid-co2-data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="update main code 3 graphs analysis" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -302,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717496032772</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update main code 3 graphs analysis">
+      <option name="closed" value="true" />
+      <created>1717721609072</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717721609072</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,6 +337,7 @@
     <MESSAGE value="Graficos sobre emissao de gases, em principal Co2 e expectativa de vida." />
     <MESSAGE value="Grafo Bar e analisies, grafo HUE e progressao de dados relacionados, GEOJSON e Tre Map Para continuação com IA e Python Data Science." />
     <MESSAGE value="Update database e Jupyter Notebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update database e Jupyter Notebook" />
+    <MESSAGE value="update main code 3 graphs analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="update main code 3 graphs analysis" />
   </component>
 </project>
