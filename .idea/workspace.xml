@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="Graficos sobre emissao de gases, em principal Co2 e expectativa de vida.">
-      <change afterPath="$PROJECT_DIR$/dados/localizacao_paises.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expectativa-de-vida.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafo_mapa_mental.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localizacao_pais.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quinto_grafo_população_paises.py" afterDir="false" />
+    <list default="true" id="43a78e0d-e991-4f0e-b0cc-c943ebe6524d" name="Changes" comment="Update database e Jupyter Notebook">
+      <change afterPath="$PROJECT_DIR$/NetworkPythomMap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyvisComponentLibTestingNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csvjson.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/PythonVisualizandoInformacoes-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/PythonVisualizandoInformacoes-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonVisualizandoInformacoes.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PythonVisualizandoInformacoes.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados/all_month.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados/owid-co2-data.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quatro-grafo-emissaogas-plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/quatro-grafo-emissaogas-plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secondgraph-emissaogas.py" beforeDir="false" afterPath="$PROJECT_DIR$/secondgraph-emissaogas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +29,8 @@
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
-        <option name="argument" value="--follow-tags" />
-        <option name="title" value="Current Branch" />
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
       </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -62,30 +60,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.emissao_percapita_gas.executor": "Run",
-    "Python.expectativa-de-vida (1).executor": "Run",
-    "Python.grafo_mapa_mental.executor": "Run",
-    "Python.localizacao_pais (1).executor": "Run",
-    "Python.localizacao_paises (1).executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.primeirografo-emissao-co2-analise.executor": "Run",
-    "Python.quatro-grafo-emissaogas-plot.executor": "Run",
-    "Python.quinto_grafo_gases_derivados.executor": "Run",
-    "Python.quinto_grafo_população_paises.executor": "Run",
-    "Python.secondgraph-emissaogas.executor": "Run",
-    "Python.terceirografico_expectativa_vida.executor": "Run",
-    "Python.testGraph.executor": "Run",
-    "Python.testingHyperopt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "testbranch",
-    "last_opened_file_path": "C:/Users/usuario/PycharmProjects/Visualiza_informacoes",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.NetworkPythomMap.executor&quot;: &quot;Run&quot;,
+    &quot;Python.emissao_percapita_gas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.expectativa-de-vida (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.grafo_mapa_mental.executor&quot;: &quot;Run&quot;,
+    &quot;Python.localizacao_pais (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.localizacao_paises (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.primeirografo-emissao-co2-analise.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pyvisComponentLibTestingNetwork.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quatro-grafo-emissaogas-plot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quinto_grafo_gases_derivados.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quinto_grafo_população_paises.executor&quot;: &quot;Run&quot;,
+    &quot;Python.secondgraph-emissaogas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.terceirografico_expectativa_vida.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testGraph.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testingHyperopt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;testbranch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/usuario/PycharmProjects/Visualiza_informacoes&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="Visualiza_informacoes" is-module-sdk="true">
@@ -102,7 +102,29 @@
       <recent name="C:\Users\usuario\PycharmProjects\Visualiza_informacoes" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.grafo_mapa_mental">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="NetworkPythomMap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Visualiza_informacoes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NetworkPythomMap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="grafo_mapa_mental" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Visualiza_informacoes" />
       <option name="ENV_FILES" value="" />
@@ -147,7 +169,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="localizacao_pais" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Visualiza_informacoes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,7 +182,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\usuario\PycharmProjects\Visualiza_informacoes\localizacao_pais.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,7 +191,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="localizacao_paises" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pyvisComponentLibTestingNetwork" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Visualiza_informacoes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,51 +204,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\usuario\PycharmProjects\Visualiza_informacoes\localizacao_paises.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="quatro-grafo-emissaogas-plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Visualiza_informacoes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quatro-grafo-emissaogas-plot.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="quinto_grafo_população_paises" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Visualiza_informacoes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\usuario\PycharmProjects\Visualiza_informacoes\quinto_grafo_população_paises.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyvisComponentLibTestingNetwork.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -236,19 +214,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.NetworkPythomMap" />
       <item itemvalue="Python.localizacao_pais (1)" />
+      <item itemvalue="Python.pyvisComponentLibTestingNetwork" />
       <item itemvalue="Python.grafo_mapa_mental" />
-      <item itemvalue="Python.localizacao_paises" />
-      <item itemvalue="Python.quatro-grafo-emissaogas-plot" />
-      <item itemvalue="Python.quinto_grafo_população_paises" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.NetworkPythomMap" />
+        <item itemvalue="Python.pyvisComponentLibTestingNetwork" />
         <item itemvalue="Python.grafo_mapa_mental" />
         <item itemvalue="Python.localizacao_pais (1)" />
-        <item itemvalue="Python.localizacao_paises" />
-        <item itemvalue="Python.quinto_grafo_população_paises" />
-        <item itemvalue="Python.quatro-grafo-emissaogas-plot" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +286,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717473377104</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Grafo Bar e analisies, grafo HUE e progressao de dados relacionados, GEOJSON e Tre Map Para continuação com IA e Python Data Science.">
+      <option name="closed" value="true" />
+      <created>1717495585484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717495585484</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update database e Jupyter Notebook">
+      <option name="closed" value="true" />
+      <created>1717496032772</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717496032772</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,6 +336,8 @@
     <MESSAGE value="Closes #1" />
     <MESSAGE value="Deciding 2 data to compare and analyze with patterns on economy and philosophy with representation using analogy and share  ( see tree graph to integrate )" />
     <MESSAGE value="Graficos sobre emissao de gases, em principal Co2 e expectativa de vida." />
-    <option name="LAST_COMMIT_MESSAGE" value="Graficos sobre emissao de gases, em principal Co2 e expectativa de vida." />
+    <MESSAGE value="Grafo Bar e analisies, grafo HUE e progressao de dados relacionados, GEOJSON e Tre Map Para continuação com IA e Python Data Science." />
+    <MESSAGE value="Update database e Jupyter Notebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update database e Jupyter Notebook" />
   </component>
 </project>

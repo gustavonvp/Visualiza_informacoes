@@ -30,6 +30,14 @@ data1 = (
 
 )
 
+
+
+fig8 = px.line(data1, x=["nitrous_oxide","cement_co2","flaring_co2", "share_global_flaring_co2", "nitrous_oxide","methane" ], y="country", title=r'$\co2 =  \pm K \text{ tonelada s}^{-1}$')
+fig8.update_layout(
+    xaxis_title=r'$\sqrt{(n_\text{c}(t|{T_\text{early}}))}$',
+    yaxis_title=r'$d, r \text{ (trade and cumulative co2 sharing)}$'
+)
+
 data1.head()
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -73,11 +81,27 @@ app.layout = [
     #Print graph datable and figure dataplot
 
     dash_table.DataTable(data=data1.to_dict('records'), page_size=10, style_table={'overflowX': 'auto'}),
-    dcc.Graph(id="graph", figure={}),
-    dcc.Graph(id="graph2", figure={})
+    dcc.Graph(id="graph", figure={}, style={'width': '100%', 'height': '95vh'}),
+    dcc.Graph(id="graph2", figure={}, responsive=True),
+    dcc.Markdown('''
+    # LaTeX Grafo de análise de Comércio de Gases e derivados do gás.
+
+    Demilitador de unidade de medida:
+    $$
+    \\frac{1}{(\\sqrt{\\phi \\sqrt{5}}-\\phi) e^{\\frac25 \\pi}} =
+    1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {1+\\frac{e^{-6\\pi}}
+    {1+\\frac{e^{-8\\pi}} {1+\\ldots} } } }
+    $$
+
+    Delimitador de unidade energetica:
+    $E^2=m^2c^4+p^2c^2$
+
+    ''', mathjax=True),
+    dcc.Graph(mathjax=True, figure=fig8, style={'width': '100%', 'height': '95vh'}),
 ]
 
 
+# Add controls to build the interaction
 @app.callback(
     Output(component_id='graph', component_property='figure'),
     Input(component_id='graph1', component_property='value'))
@@ -85,15 +109,12 @@ def update_graph(col_chosen):
     fig = px.histogram(data1, x='country', y=col_chosen, histfunc='avg', barmode="group")
     return fig
 
-
 @app.callback(
     Output(component_id='graph2', component_property='figure'),
     Input(component_id='graph1', component_property='value'))
 def update_graph(col_chosen):
-    fig2 = px.histogram(data1, x='country', y=col_chosen, histfunc='count', barmode="group")
-    return fig2
-
-# Add controls to build the interaction
+    fig7 = px.scatter(data1, x="country",  y=col_chosen, color="country")
+    return fig7
 
 
 if __name__ == "__main__":
